@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Gradient</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="inner">
+
+            <div class="gradientBox"></div>
+
+            <div class="part2">
+                <div class="left">
+                    <select name="direction" id="direction">
+                        <option value="top">Top</option>
+                        <option value="top right">Top Right</option>
+                        <option value="right" selected>Right</option>
+                        <option value="bottom right">Bottom Right</option>
+                        <option value="bottom">Bottom</option>
+                        <option value="left bottom">Left Bottom</option>
+                        <option value="left">Left</option>
+                        <option value="left top">Left Top</option>
+                    </select>
+                </div>
+
+                <div class="right">
+                    <div class="color_box">
+                        <input type="color" name="" value="#71B280" class="color">
+                    </div>
+                    <div class="color_box">
+                        <input type="color" name="" value="#134E5E" class="color">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="part3">
+                <textarea name="" disabled id="colorCode">background-color: to top left #796976, #696768
+                </textarea>
+            </div>
+
+            <div class="part4">
+                <button type="button" class="refresh">Generate Color</button>
+                <button type="button" class="copy">Copy Color</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

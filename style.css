@@ -1,0 +1,147 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+
+.main
+{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: skyblue;
+}
+
+.inner
+{
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.gradientBox
+{
+    height: 250px;
+    width: 450px;
+    background: linear-gradient(to right, #71B280, #134E5E);
+}
+
+.part2
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.part2 .left,.part2 .right
+{
+    width: 45%;
+}
+
+.part2 .left
+{
+    padding: 7px 10px ;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.part2 .left select
+{
+    outline: none;
+    box-shadow: none;
+    border: none;
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.part2 .right
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.part2 .right .color_box
+{
+    width: 45%;
+}
+
+.part2 .right .color_box input
+{
+    width: 100%;
+    height: 40px;
+    cursor: pointer;
+}
+
+.part3 textarea
+{
+    max-height: 80px;
+    padding: 15px;
+    width: 100%;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 400;
+}
+.part4
+{
+    padding-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.part4 button
+{
+    width: 48%;
+    height: 45px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+}
+.part4 button:active
+{
+    transform: scale(0.98);
+}
+.refresh
+{
+    background-color: salmon;
+}
+.copy 
+{
+    background-color: royalblue;
+}
+
+@media(max-width: 425px)
+{
+    .gradientBox
+    {
+        width: 280px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 575px)
+{
+    .gradientBox
+    {
+        width: 350px;
+    }
+}
